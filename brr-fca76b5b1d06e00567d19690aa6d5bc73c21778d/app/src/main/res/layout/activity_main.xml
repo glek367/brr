@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/color_background">
+
+    <!-- Заголовок приложения -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Оконное Производство"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp"
+        android:textColor="@color/color_text_primary" />
+
+    <!-- Статус системы -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Статус системы"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/color_text_primary" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✅ Приложение готово к работе"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:background="@color/color_success"
+            android:textColor="@color/white"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- Основное меню -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:elevation="6dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Основные разделы"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:textColor="@color/color_text_primary" />
+
+        <!-- Кнопка Заказы -->
+        <Button
+            android:id="@+id/btnOrders"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="📋 Заказы"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/color_primary"
+            android:textColor="@color/white"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Кнопка Продукция -->
+        <Button
+            android:id="@+id/btnProducts"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🪟 Продукция"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/color_accent"
+            android:textColor="@color/white"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Кнопка Клиенты -->
+        <Button
+            android:id="@+id/btnClients"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="👥 Клиенты"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/color_primary_dark"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <!-- Информация о версии -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Оконное производство v1.0\nAPI 33 • Android 13"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/color_text_secondary" />
+
+</LinearLayout>
