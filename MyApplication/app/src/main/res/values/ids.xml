@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="resultTextView" type="id" />
+    <item name="sessionTextView" type="id" />
+    <item name="btn_catalog" type="id" />
+    <item name="btn_register" type="id" />
+    <item name="btn_login" type="id" />
+    <item name="title_auth" type="id" />
+    <item name="edit_text_email" type="id" />
+    <item name="edit_text_password" type="id" />
+    <item name="button_submit_auth" type="id" />
+</resources>

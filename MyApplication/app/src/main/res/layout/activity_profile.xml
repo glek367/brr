@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_vertical"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Мой Профиль"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_email_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email (нельзя изменить)"
+        android:inputType="textEmailAddress"
+        android:enabled="false"
+        android:background="#EEE"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_username_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя пользователя (Username)"
+        android:inputType="text"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_first_name_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя (First Name)"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_last_name_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Фамилия (Last Name)"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/button_save_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить изменения"/>
+
+</LinearLayout>
